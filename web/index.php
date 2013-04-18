@@ -5,11 +5,10 @@
     
 		<title>Webprojekt-Steckdose</title>
     
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles auslager!!!!N -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
@@ -24,7 +23,7 @@
       <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 																	 
-		<script src="/js/jquery.js"></script>
+	<script src="/js/jquery.js"></script>
     <script src="/js/bootstrap-transition.js"></script>
     <script src="/js/bootstrap-alert.js"></script>
     <script src="/js/bootstrap-modal.js"></script>
@@ -38,12 +37,12 @@
     <script src="/js/bootstrap-carousel.js"></script>
     <script src="/js/bootstrap-typeahead.js"></script>
 	
-		<script type="text/javascript" src="/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.js"></script>
   
 	</head>
 
   <body>
-
+<!--  erstellen der Navigationsbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -85,13 +84,12 @@
 
     <div class="container">
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-
-			
+	<!-- action's f�r den Seitenaufruf -->		
 		  <?php
 				$action = $_GET["action"];
 				  if ($action == NULL ) {
 			?>
+			<!-- Hauptseite -->
 					  <div class="hero-unit">
             <h1>Die Revolutionierung deiner Stromrechnung</h1>
             <p>Werde jetzt Herrscher über deinen Stromverbrauch & Entscheide selbst, wann welches Gerät Strom verbrauchen darf.</p>
@@ -114,7 +112,7 @@
 								<p><a class="btn" href="#">View details »</a></p>
 							</div>
 						</div>
-
+			<!-- registrierpart -->
 			<?php
 					}
 					if ($action != NULL ) {
@@ -128,7 +126,7 @@
 			?>
 			
       <hr>
-
+	<!--  Fu�zeile -->
       <footer>
         <p>© Projekt Steckdose 2013</p>
       </footer>
